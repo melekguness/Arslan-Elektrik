@@ -42,7 +42,7 @@ export const services: Service[] = [
   },
   {
     id: "elektrik-pano",
-    title: "Elektrik Pano Montajı",
+    title: "Elektrik Panosu Montajı",
     description:
       "Dağıtım, kompanzasyon ve otomasyon panolarının tasarımı ve montajı.",
     longDescription:
