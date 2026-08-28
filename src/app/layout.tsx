@@ -16,7 +16,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#1F2937",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#1F2937" },
+    { media: "(prefers-color-scheme: dark)", color: "#1F2937" },
+  ],
 };
 
 export const metadata: Metadata = {
@@ -27,8 +30,11 @@ export const metadata: Metadata = {
   }),
   appleWebApp: {
     capable: true,
-    statusBarStyle: "black-translucent",
+    statusBarStyle: "black",
     title: SITE.name,
+  },
+  other: {
+    "theme-color": "#1F2937",
   },
   icons: {
     icon: [{ url: "/logo.png", type: "image/png" }],

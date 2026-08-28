@@ -75,6 +75,7 @@
 html {
   scroll-behavior: auto;
   overflow-x: clip;
+  background-color: #1F2937;
   
   scrollbar-width: thin;
   scrollbar-color: #6b7280 #f3f4f6;
