@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3002](http://localhost:3002).
 
 ## Build
 
@@ -31,8 +31,6 @@ npm start
 | `/` | Ana Sayfa |
 | `/hizmetler` | Hizmetler |
 | `/projeler` | Projeler |
-| `/hakkimizda` | Hakkımızda |
-| `/referanslar` | Referanslar |
 | `/iletisim` | İletişim |
 
-Update phone, WhatsApp and address in `src/lib/constants.ts` before go-live.
+Update phone, WhatsApp and address in `src/lib/siteConfig.ts` before go-live.
