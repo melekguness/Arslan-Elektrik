@@ -12,9 +12,9 @@ export function CoverageMap() {
   const hub = COVERAGE_AREAS.find((a) => a.hub)!;
 
   return (
-    <section id="bolgeler" className="section-pad pb-safe-float bg-surface">
+    <section id="bolgeler" className="section-pad bg-surface max-md:pb-5">
       <div className="container-premium flex flex-col items-center">
-        <Reveal className="mb-8 w-full max-w-2xl text-center sm:mb-9 md:mb-10">
+        <Reveal className="mb-6 w-full max-w-2xl text-center sm:mb-9 md:mb-10">
           <p className="type-eyebrow mb-3 inline-flex items-center justify-center gap-2 text-primary">
             <span className="inline-block h-2 w-2 rounded-full bg-primary" aria-hidden />
             Hizmet Alanı
@@ -22,7 +22,7 @@ export function CoverageMap() {
           <h2 className="type-h2 text-[#111]">Hizmet Bölgelerimiz</h2>
         </Reveal>
 
-        <div className="mx-auto grid w-full max-w-4xl items-center gap-7 sm:gap-8 lg:max-w-none lg:grid-cols-[minmax(0,320px)_1fr] lg:gap-9 xl:grid-cols-[minmax(0,340px)_1fr]">
+        <div className="mx-auto grid w-full max-w-4xl items-center gap-5 sm:gap-8 lg:max-w-none lg:grid-cols-[minmax(0,320px)_1fr] lg:gap-9 xl:grid-cols-[minmax(0,340px)_1fr]">
           <Reveal className="flex justify-center lg:justify-start">
             <div className="relative aspect-square w-full max-w-[240px] overflow-hidden border border-black/10 bg-[#0f0f0f] sm:max-w-[300px] lg:max-w-none">
               <svg
