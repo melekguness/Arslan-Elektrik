@@ -19,8 +19,10 @@
   --header-offset: calc(3.5rem + env(safe-area-inset-top, 0px));
   
   --fab-clearance: 5.5rem;
-  --fab-rail: 4.5rem;
-  --fab-stack: 9.5rem;
+  /* Half of horizontal FAB reserve (btn 56px + inset 16px + gap ≈ 5.25rem) */
+  --fab-rail: 5.25rem;
+  /* Clears WhatsApp + Call + BackToTop stack on mobile */
+  --fab-stack: 15rem;
   
   --font-plus-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-source-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
@@ -273,15 +275,27 @@ svg {
   padding-bottom: calc(var(--fab-stack) + env(safe-area-inset-bottom, 0px));
 }
 
+/* Legacy asymmetric right pad — prefer .fab-center-safe (keeps visual center) */
 .pr-fab-clear {
   padding-right: max(1rem, var(--fab-rail));
+}
+
+/*
+  Narrow + center interactive blocks so right-side FABs do not cover them,
+  without shifting left (equal leftover space on both sides).
+*/
+.fab-center-safe {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: min(100%, calc(100vw - (2 * var(--fab-rail))));
+  margin-inline: auto;
 }
 
 @supports (padding: max(0px)) {
   .pb-safe-float {
     padding-bottom: max(
       var(--fab-stack),
-      calc(8rem + env(safe-area-inset-bottom, 0px))
+      calc(14.5rem + env(safe-area-inset-bottom, 0px))
     );
   }
 }
@@ -289,6 +303,15 @@ svg {
 @media (min-width: 768px) {
   .pr-fab-clear {
     padding-right: 0;
+  }
+
+  .fab-center-safe {
+    max-width: 100%;
+  }
+
+  /* Desktop: FABs less intrusive; restore normal section rhythm */
+  .pb-safe-float {
+    padding-bottom: clamp(2rem, 3.2vw, 3.75rem);
   }
 }
 
@@ -362,24 +385,28 @@ svg {
 }
 
 .container-premium {
-  width: min(1200px, calc(100% - 2rem));
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
   margin-inline: auto;
-  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
+  padding-inline: max(1rem, env(safe-area-inset-left, 0px))
+    max(1rem, env(safe-area-inset-right, 0px));
 }
 
 .container-wide {
-  width: min(1400px, calc(100% - 2rem));
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
   margin-inline: auto;
+  padding-inline: max(1rem, env(safe-area-inset-left, 0px))
+    max(1rem, env(safe-area-inset-right, 0px));
 }
 
 @media (min-width: 640px) {
   .container-premium,
   .container-wide {
-    width: min(1200px, calc(100% - 2.5rem));
-  }
-
-  .container-wide {
-    width: min(1400px, calc(100% - 2.5rem));
+    padding-inline: max(1.25rem, env(safe-area-inset-left, 0px))
+      max(1.25rem, env(safe-area-inset-right, 0px));
   }
 }
 

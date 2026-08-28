@@ -58,22 +58,22 @@ export function ContactForm() {
 
   return (
     <section id="iletisim" className="section-pad pb-safe-float bg-surface">
-      <div className="container-premium">
-        <Reveal className="mx-auto mb-8 max-w-2xl text-center sm:mb-9 lg:mb-10">
+      <div className="container-premium flex flex-col items-center">
+        <Reveal className="mb-8 w-full max-w-2xl text-center sm:mb-9 lg:mb-10">
           <p className="type-eyebrow mb-3 inline-flex items-center justify-center gap-2 text-primary">
             <span className="inline-block h-2 w-2 rounded-full bg-primary" aria-hidden />
             İletişim
           </p>
           <h2 className="type-h2 break-words text-[#111]">Hemen Ulaşın</h2>
-          <p className="type-body mt-3 break-words px-1">
+          <p className="type-body mx-auto mt-3 max-w-prose break-words px-1">
             Keşif, teklif veya acil arıza — hızlı dönüş.
           </p>
         </Reveal>
 
-        <Reveal className="mx-auto w-full max-w-[600px]">
+        <Reveal className="w-full max-w-[600px]">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="mx-auto flex w-full flex-col rounded-xl border border-black/8 bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-7 lg:p-8"
+            className="mx-auto flex w-full flex-col rounded-xl border border-black/8 bg-white p-5 text-left shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-7 lg:p-8"
             noValidate
           >
             <div className="mb-5 border-b border-black/6 pb-4 sm:mb-6 sm:pb-5">
