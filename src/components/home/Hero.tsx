@@ -423,9 +423,9 @@ export function Hero() {
                     rel="noopener noreferrer"
                     hero
                     className={cn(
-                      "cta-shine inline-flex h-11 min-h-11 w-full min-w-0 origin-left items-center justify-center gap-1 overflow-hidden rounded-lg bg-[#1FA855] px-1.5 text-[10px] font-bold uppercase leading-none tracking-[0.02em] text-white shadow-sm touch-manipulation sm:origin-center sm:h-[3.25rem] sm:gap-2 sm:px-3 sm:text-xs sm:tracking-[0.06em]",
+                      "cta-shine inline-flex h-11 min-h-11 w-full min-w-0 origin-left items-center justify-center gap-1 overflow-hidden rounded-lg bg-[#178C46] px-1.5 text-[10px] font-bold uppercase leading-none tracking-[0.02em] text-white shadow-sm touch-manipulation sm:origin-center sm:h-[3.25rem] sm:gap-2 sm:px-3 sm:text-xs sm:tracking-[0.06em]",
                       pressCssHero,
-                      "hover:!bg-[#178C46] active:!bg-[#178C46]"
+                      "hover:!bg-[#136F3A] active:!bg-[#136F3A]"
                     )}
                   >
                     <MessageCircle className="relative z-[1] size-3.5 shrink-0 sm:size-4" strokeWidth={2} aria-hidden />
