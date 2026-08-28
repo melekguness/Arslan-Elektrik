@@ -201,8 +201,8 @@ export function CoverageMap() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.08} className="w-full min-w-0 pr-fab-clear md:pr-0">
-            <ul className="grid grid-cols-2 gap-3 sm:gap-3.5">
+          <Reveal delay={0.08} className="w-full min-w-0">
+            <ul className="mx-auto grid max-w-md grid-cols-1 gap-3 sm:max-w-none sm:grid-cols-2 sm:gap-3.5">
               {COVERAGE_AREAS.map((area) => {
                 const isActive = active === area.id;
                 const isHub = Boolean(area.hub);
@@ -215,7 +215,7 @@ export function CoverageMap() {
                       onClick={() => setActive(area.id)}
                       aria-pressed={isActive}
                       className={cn(
-                        "flex min-h-12 w-full items-center gap-2 rounded-md border px-2.5 py-3.5 text-left leading-none transition-colors touch-manipulation sm:min-h-14 sm:gap-3 sm:px-4 sm:py-4",
+                        "flex min-h-12 w-full items-center gap-2.5 rounded-md border px-3.5 py-3.5 text-left leading-none transition-colors touch-manipulation sm:min-h-14 sm:gap-3 sm:px-4 sm:py-4",
                         pressCss,
                         isActive
                           ? "border-primary bg-primary text-white"
@@ -232,7 +232,7 @@ export function CoverageMap() {
                         strokeWidth={1.75}
                         aria-hidden
                       />
-                      <span className="font-heading flex min-w-0 flex-wrap items-center gap-1.5 text-[13px] font-bold sm:text-[15px]">
+                      <span className="font-heading flex min-w-0 flex-nowrap items-center gap-1.5 text-[14px] font-bold sm:text-[15px]">
                         <span className="truncate">{area.name}</span>
                         {isHub ? (
                           <span

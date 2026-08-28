@@ -70,10 +70,10 @@ export function ContactForm() {
           </p>
         </Reveal>
 
-        <Reveal className="mx-auto w-full max-w-[600px] pr-fab-clear md:pr-0">
+        <Reveal className="mx-auto w-full max-w-[600px]">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col rounded-xl border border-black/8 bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-7 lg:p-8"
+            className="mx-auto flex w-full flex-col rounded-xl border border-black/8 bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-7 lg:p-8"
             noValidate
           >
             <div className="mb-5 border-b border-black/6 pb-4 sm:mb-6 sm:pb-5">
