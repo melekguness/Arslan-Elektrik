@@ -351,7 +351,7 @@ export function Hero() {
           <div className="pointer-events-none absolute inset-0 z-[1] overflow-hidden" aria-hidden>
             <div
               className={cn(
-                "hero-diagonal absolute inset-y-0 left-0 bg-[#DC2626] shadow-[10px_0_32px_rgba(0,0,0,0.18)]",
+                "hero-diagonal absolute inset-y-0 left-0 bg-[#B91C1C] shadow-[10px_0_32px_rgba(0,0,0,0.18)]",
                 panelWidth
               )}
             />
@@ -369,7 +369,7 @@ export function Hero() {
           </div>
 
           {}
-          <div className="relative z-20 flex h-full min-h-[min(68dvh,520px)] items-start overflow-x-clip pl-[max(0.875rem,env(safe-area-inset-left))] pr-2 pb-[5.5rem] pt-[max(4.25rem,calc(env(safe-area-inset-top,0px)+3.25rem))] sm:min-h-[520px] sm:items-center sm:overflow-visible sm:px-6 sm:pb-14 sm:pt-[max(1.25rem,env(safe-area-inset-top,0px))] md:min-h-[calc(100dvh-var(--header-offset))] md:pl-[max(1.75rem,calc((100vw-1200px)/2))] md:pr-10 md:pb-16">
+          <div className="relative z-20 flex h-full min-h-[min(68dvh,520px)] items-start overflow-x-clip pl-[max(1.5rem,calc(1rem+env(safe-area-inset-left)))] pr-2 pb-[5.5rem] pt-[max(4.25rem,calc(env(safe-area-inset-top,0px)+3.25rem))] sm:min-h-[520px] sm:items-center sm:overflow-visible sm:px-6 sm:pb-14 sm:pt-[max(1.25rem,env(safe-area-inset-top,0px))] md:min-h-[calc(100dvh-var(--header-offset))] md:pl-[max(1.75rem,calc((100vw-1200px)/2))] md:pr-10 md:pb-16">
             <AnimatePresence mode="wait">
               <motion.div
                 key={slide.title}

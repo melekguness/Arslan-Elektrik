@@ -86,10 +86,10 @@ export function Navbar() {
       <div className="nav-safe-top relative z-[110] bg-[#1F2937]">
         <div className="nav-safe-x relative mx-auto flex h-14 max-w-[1200px] items-center justify-between gap-2 overflow-visible sm:h-[72px] sm:gap-4 md:h-[80px]">
           <BrandLogo
-            size={36}
+            size={34}
             priority
-            className="min-w-0 max-w-[calc(100%-3.5rem)] sm:max-w-none"
-            wordmarkClassName="!text-[13px] sm:!text-[18px] md:!text-[21px]"
+            className="min-w-0 max-w-[calc(100%-3.75rem)] sm:max-w-none"
+            wordmarkClassName="!text-[13.5px] tracking-[-0.01em] sm:!text-[18px] md:!text-[21px]"
           />
 
           <nav className="ml-auto hidden items-center gap-0.5 lg:flex" aria-label="Ana menü">
