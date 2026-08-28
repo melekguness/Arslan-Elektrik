@@ -407,6 +407,7 @@ export function Hero() {
                   <MotionAnchor
                     href={SITE.phoneHref}
                     hero
+                    aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
                     className={cn(
                       "cta-shine inline-flex h-11 min-h-11 w-full min-w-0 origin-left items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-1.5 text-[10px] font-bold uppercase leading-none tracking-[0.02em] text-[#DC2626] shadow-sm touch-manipulation sm:origin-center sm:h-[3.25rem] sm:gap-2 sm:px-3 sm:text-xs sm:tracking-[0.06em]",
                       pressCssHero,

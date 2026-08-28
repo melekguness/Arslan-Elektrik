@@ -24,7 +24,7 @@ export default function NotFound() {
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <a href={SITE.phoneHref}>
+            <a href={SITE.phoneHref} aria-label={`Hemen ara: ${SITE.phoneDisplay}`}>
               <Phone className="size-4" />
               Hemen Ara
             </a>

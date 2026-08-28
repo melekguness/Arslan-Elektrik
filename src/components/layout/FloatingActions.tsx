@@ -111,7 +111,8 @@ export function CallButton() {
         "touch-manipulation hover:!bg-black hover:!text-white active:!bg-black active:!text-white group",
         press.css
       )}
-      aria-label="Hemen ara"
+      aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
+      title={SITE.phoneDisplay}
     >
       <Phone className="size-5 md:size-4" />
       <span className="hidden max-w-0 overflow-hidden whitespace-nowrap text-sm font-bold uppercase opacity-0 transition-all duration-200 md:inline md:group-hover:max-w-[7rem] md:group-hover:opacity-100 md:group-active:max-w-[7rem] md:group-active:opacity-100">

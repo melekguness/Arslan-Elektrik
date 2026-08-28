@@ -179,6 +179,7 @@ export function Navbar() {
             ))}
             <MotionAnchor
               href={SITE.phoneHref}
+              aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
               className={cn(
                 "cta-shine mt-6 flex h-12 min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#DC2626] text-sm font-bold uppercase text-white shadow-sm touch-manipulation",
                 "hover:!bg-black hover:!text-white active:!bg-black active:!text-white",

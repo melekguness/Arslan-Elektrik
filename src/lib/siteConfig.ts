@@ -8,6 +8,7 @@ export const siteConfig = {
   url: "https://arslanelektrik.com",
   locale: "tr_TR",
   phone: "+905426764600",
+  /** User-facing TR spacing: `0xxx xxx xx xx`. Keep href/whatsapp digits-only. */
   phoneDisplay: "0542 676 46 00",
   phoneHref: "tel:+905426764600",
   whatsapp: "905426764600",

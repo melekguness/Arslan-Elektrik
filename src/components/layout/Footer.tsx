@@ -44,6 +44,7 @@ export function Footer() {
               <li>
                 <a
                   href={SITE.phoneHref}
+                  aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
                   className="inline-flex items-center gap-2 touch-manipulation transition-colors hover:text-primary active:text-primary"
                 >
                   <Phone className="size-4 text-primary" strokeWidth={1.75} />
