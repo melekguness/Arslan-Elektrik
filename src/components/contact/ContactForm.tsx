@@ -57,7 +57,7 @@ export function ContactForm() {
   };
 
   return (
-    <section id="iletisim" className="section-pad pb-safe-float bg-surface max-md:pt-5">
+    <section id="iletisim" className="section-pad bg-surface max-md:pt-5 max-md:!pb-6">
       <div className="container-premium flex flex-col items-center">
         <Reveal className="mb-6 w-full max-w-2xl text-center sm:mb-9 lg:mb-10">
           <p className="type-eyebrow mb-3 inline-flex items-center justify-center gap-2 text-primary">

@@ -21,8 +21,8 @@
   --fab-clearance: 5.5rem;
   /* Half of horizontal FAB reserve (btn 56px + inset 16px + gap ≈ 5.25rem) */
   --fab-rail: 5.25rem;
-  /* Clears WhatsApp + Call stack without a huge gap before footer */
-  --fab-stack: 7rem;
+  /* Clears WhatsApp + Call stack above home indicator */
+  --fab-stack: 5.5rem;
   
   --font-plus-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-source-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
@@ -296,7 +296,7 @@ svg {
   .pb-safe-float {
     padding-bottom: max(
       var(--fab-stack),
-      calc(6.5rem + env(safe-area-inset-bottom, 0px))
+      calc(5rem + env(safe-area-inset-bottom, 0px))
     );
   }
 }
@@ -312,7 +312,7 @@ svg {
 
   /* Desktop: FABs less intrusive; restore normal section rhythm */
   .pb-safe-float {
-    padding-bottom: clamp(2rem, 3.2vw, 3.75rem);
+    padding-bottom: 0;
   }
 }
 

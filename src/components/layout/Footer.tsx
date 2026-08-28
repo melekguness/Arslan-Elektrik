@@ -7,8 +7,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-surface-dark text-white">
-      <div className="container-premium pb-7 pt-8 sm:pb-8 sm:pt-9">
+    <footer className="bg-surface-dark text-white pb-safe-float md:pb-0">
+      <div className="container-premium pb-5 pt-6 sm:pb-8 sm:pt-9">
         <div className="grid gap-7 sm:gap-8 md:grid-cols-[minmax(0,1.35fr)_auto_auto] md:items-start md:gap-x-10 lg:gap-x-12">
           <div className="max-w-md space-y-3.5">
             <BrandLogo size={48} className="gap-3" wordmarkClassName="!text-base sm:!text-lg" />
