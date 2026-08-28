@@ -47,7 +47,7 @@ export function Stats() {
   const inView = useInView(ref, { once: true, margin: "-15% 0px" });
 
   return (
-    <section className="relative overflow-hidden bg-[#DC2626] py-14 text-white sm:py-16 md:py-16">
+    <section className="relative overflow-hidden bg-[#B91C1C] py-14 text-white sm:py-16 md:bg-[#DC2626] md:py-16">
       {}
       <Image
         src="/images/stats-bg.jpg"

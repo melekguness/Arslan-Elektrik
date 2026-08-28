@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export function ElectrixBanner() {
   return (
-    <section className="relative overflow-x-clip bg-[#DC2626]">
+    <section className="relative overflow-x-clip bg-[#B91C1C] md:bg-[#DC2626]">
       <div className="relative mx-auto max-w-[780px] px-5 pb-10 pt-[max(3.25rem,calc(var(--header-offset)*0.25+2.75rem))] text-center sm:px-8 sm:pb-12 md:pb-14">
         <motion.h2
           initial={{ opacity: 0, y: -28 }}

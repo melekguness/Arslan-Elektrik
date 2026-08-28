@@ -13,7 +13,7 @@ export function PageHero({
   description: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#DC2626]">
+    <section className="relative overflow-hidden bg-[#B91C1C] md:bg-[#DC2626]">
       <div
         className="absolute inset-0 opacity-25"
         style={{
@@ -22,7 +22,7 @@ export function PageHero({
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#DC2626] via-[#DC2626]/95 to-[#DC2626]/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#B91C1C] via-[#B91C1C]/95 to-[#B91C1C]/70 md:from-[#DC2626] md:via-[#DC2626]/95 md:to-[#DC2626]/70" />
       <div className="container-premium relative pb-16 pt-[max(4rem,calc(var(--header-offset)*0.35+3rem))] md:pb-20">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
