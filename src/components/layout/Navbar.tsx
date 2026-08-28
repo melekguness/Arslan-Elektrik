@@ -88,7 +88,7 @@ export function Navbar() {
           <BrandLogo
             size={34}
             priority
-            className="min-w-0 max-w-[calc(100%-3.75rem)] sm:max-w-none"
+            className="ml-1 min-w-0 max-w-[calc(100%-3.75rem)] sm:ml-0 sm:max-w-none"
             wordmarkClassName="!text-[13.5px] tracking-[-0.01em] sm:!text-[18px] md:!text-[21px]"
           />
 

@@ -342,13 +342,13 @@ svg {
 }
 
 .nav-safe-x {
-  padding-left: max(1.5rem, calc(1rem + constant(safe-area-inset-left)), calc(1rem + env(safe-area-inset-left, 0px)));
+  padding-left: max(1.85rem, calc(1.25rem + constant(safe-area-inset-left)), calc(1.25rem + env(safe-area-inset-left, 0px)));
   padding-right: max(1.25rem, calc(0.875rem + constant(safe-area-inset-right)), calc(0.875rem + env(safe-area-inset-right, 0px)));
 }
 
 @media (min-width: 640px) {
   .nav-safe-x {
-    padding-left: max(1.5rem, calc(1rem + constant(safe-area-inset-left)), calc(1rem + env(safe-area-inset-left, 0px)));
+    padding-left: max(1.75rem, calc(1.25rem + constant(safe-area-inset-left)), calc(1.25rem + env(safe-area-inset-left, 0px)));
     padding-right: max(1.5rem, calc(1rem + constant(safe-area-inset-right)), calc(1rem + env(safe-area-inset-right, 0px)));
   }
 }
