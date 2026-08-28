@@ -20,22 +20,27 @@ export function BrandLogo({
   return (
     <Link
       href="/"
-      className={cn("inline-flex min-w-0 items-center gap-3", className)}
+      className={cn("inline-flex min-w-0 items-center gap-2.5 sm:gap-3", className)}
       aria-label="Arslan Elektrik ana sayfa"
     >
       <span
-        className="relative shrink-0 overflow-hidden rounded-full bg-black shadow-[0_0_0_2px_rgba(227,28,35,0.35)]"
-        style={{ width: size, height: size }}
+        className="relative inline-flex shrink-0 items-center justify-center rounded-full bg-[#DC2626]/40 p-[2px]"
+        style={{ width: size + 4, height: size + 4 }}
       >
-        <Image
-          src="/logo.png"
-          alt="Arslan Elektrik logo"
-          width={size * 2}
-          height={size * 2}
-          priority={priority}
-          unoptimized
-          className="h-full w-full object-cover"
-        />
+        <span
+          className="relative block overflow-hidden rounded-full bg-black"
+          style={{ width: size, height: size }}
+        >
+          <Image
+            src="/logo.png"
+            alt="Arslan Elektrik logo"
+            width={size * 2}
+            height={size * 2}
+            priority={priority}
+            unoptimized
+            className="h-full w-full object-contain p-[1px]"
+          />
+        </span>
       </span>
       {showWordmark ? (
         <span

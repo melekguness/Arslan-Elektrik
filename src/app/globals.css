@@ -341,14 +341,14 @@ svg {
 }
 
 .nav-safe-x {
-  padding-left: max(1rem, constant(safe-area-inset-left), env(safe-area-inset-left, 0px));
-  padding-right: max(1rem, constant(safe-area-inset-right), env(safe-area-inset-right, 0px));
+  padding-left: max(1.125rem, calc(0.75rem + constant(safe-area-inset-left)), calc(0.75rem + env(safe-area-inset-left, 0px)));
+  padding-right: max(1.125rem, calc(0.75rem + constant(safe-area-inset-right)), calc(0.75rem + env(safe-area-inset-right, 0px)));
 }
 
 @media (min-width: 640px) {
   .nav-safe-x {
-    padding-left: max(1.25rem, constant(safe-area-inset-left), env(safe-area-inset-left, 0px));
-    padding-right: max(1.25rem, constant(safe-area-inset-right), env(safe-area-inset-right, 0px));
+    padding-left: max(1.25rem, calc(1rem + constant(safe-area-inset-left)), calc(1rem + env(safe-area-inset-left, 0px)));
+    padding-right: max(1.25rem, calc(1rem + constant(safe-area-inset-right)), calc(1rem + env(safe-area-inset-right, 0px)));
   }
 }
 
