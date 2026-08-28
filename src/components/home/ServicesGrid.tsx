@@ -19,7 +19,7 @@ export function ServicesGrid({
   const canHover = useCanHover();
 
   return (
-    <section id="hizmetler" className="relative overflow-x-clip bg-[#f6f6f6] pt-8 pb-12 sm:py-14 md:py-16">
+    <section id="hizmetler" className="relative overflow-x-clip bg-[#f6f6f6] pt-10 pb-14 sm:py-14 md:py-16">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white to-transparent sm:h-32" aria-hidden />
       <div className="relative mx-auto max-w-[1200px] px-4 sm:px-5 md:px-6">
         {showHeader && (

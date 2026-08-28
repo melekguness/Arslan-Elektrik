@@ -14,7 +14,7 @@ export function CoverageMap() {
   return (
     <section id="bolgeler" className="section-pad bg-surface">
       <div className="container-premium">
-        <Reveal className="mx-auto mb-7 max-w-2xl text-center sm:mb-8 md:mb-9">
+        <Reveal className="mx-auto mb-8 max-w-2xl text-center sm:mb-9 md:mb-10">
           <p className="type-eyebrow mb-3 inline-flex items-center justify-center gap-2 text-primary">
             <span className="inline-block h-2 w-2 rounded-full bg-primary" aria-hidden />
             Hizmet Alanı
@@ -22,7 +22,7 @@ export function CoverageMap() {
           <h2 className="type-h2 text-[#111]">Hizmet Bölgelerimiz</h2>
         </Reveal>
 
-        <div className="mx-auto grid max-w-4xl items-center gap-5 sm:gap-7 lg:max-w-none lg:grid-cols-[minmax(0,320px)_1fr] lg:gap-9 xl:grid-cols-[minmax(0,340px)_1fr]">
+        <div className="mx-auto grid max-w-4xl items-center gap-7 sm:gap-8 lg:max-w-none lg:grid-cols-[minmax(0,320px)_1fr] lg:gap-9 xl:grid-cols-[minmax(0,340px)_1fr]">
           <Reveal className="flex justify-center lg:justify-start">
             <div className="relative aspect-square w-full max-w-[260px] overflow-hidden border border-black/10 bg-[#0f0f0f] sm:max-w-[300px] lg:max-w-none">
               <svg
@@ -201,8 +201,8 @@ export function CoverageMap() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.08} className="w-full min-w-0">
-            <ul className="grid grid-cols-2 gap-2.5 sm:gap-3">
+          <Reveal delay={0.08} className="w-full min-w-0 pr-fab-clear md:pr-0">
+            <ul className="grid grid-cols-2 gap-3 sm:gap-3.5">
               {COVERAGE_AREAS.map((area) => {
                 const isActive = active === area.id;
                 const isHub = Boolean(area.hub);
@@ -215,7 +215,7 @@ export function CoverageMap() {
                       onClick={() => setActive(area.id)}
                       aria-pressed={isActive}
                       className={cn(
-                        "flex min-h-12 w-full items-center gap-2.5 rounded-md border px-3 py-3.5 text-left leading-none transition-colors touch-manipulation sm:min-h-14 sm:gap-3 sm:px-4 sm:py-4",
+                        "flex min-h-12 w-full items-center gap-2 rounded-md border px-2.5 py-3.5 text-left leading-none transition-colors touch-manipulation sm:min-h-14 sm:gap-3 sm:px-4 sm:py-4",
                         pressCss,
                         isActive
                           ? "border-primary bg-primary text-white"

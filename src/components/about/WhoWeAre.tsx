@@ -28,7 +28,7 @@ export function WhoWeAre() {
   return (
     <section
       id="hakkimizda"
-      className="relative overflow-x-hidden bg-white py-8 sm:py-12 md:py-14 lg:py-14"
+      className="relative overflow-x-hidden bg-white py-10 sm:py-12 md:py-14 lg:py-14"
     >
       <div className="mx-auto grid max-w-[1200px] min-w-0 grid-cols-1 items-center gap-7 px-4 sm:gap-8 sm:px-5 md:px-6 lg:grid-cols-2 lg:gap-10">
         <Reveal effect="down" className="order-1 min-w-0 lg:order-2">

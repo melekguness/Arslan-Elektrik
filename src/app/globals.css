@@ -19,6 +19,8 @@
   --header-offset: calc(3.5rem + env(safe-area-inset-top, 0px));
   
   --fab-clearance: 5.5rem;
+  --fab-rail: 4.5rem;
+  --fab-stack: 9.5rem;
   
   --font-plus-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-source-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
@@ -263,13 +265,30 @@ svg {
   padding-right: max(1.25rem, env(safe-area-inset-right, 0px));
 }
 
+.section-pad {
+  padding-block: clamp(2.75rem, 8vw, 3.75rem);
+}
+
 .pb-safe-float {
-  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(var(--fab-stack) + env(safe-area-inset-bottom, 0px));
+}
+
+.pr-fab-clear {
+  padding-right: max(1rem, var(--fab-rail));
 }
 
 @supports (padding: max(0px)) {
   .pb-safe-float {
-    padding-bottom: max(5.5rem, calc(4rem + env(safe-area-inset-bottom, 0px)));
+    padding-bottom: max(
+      var(--fab-stack),
+      calc(8rem + env(safe-area-inset-bottom, 0px))
+    );
+  }
+}
+
+@media (min-width: 768px) {
+  .pr-fab-clear {
+    padding-right: 0;
   }
 }
 

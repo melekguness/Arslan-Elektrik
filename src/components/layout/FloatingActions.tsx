@@ -53,9 +53,8 @@ export function BackToTop() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       className={cn(
         "group fixed z-40 flex h-11 w-11 min-h-11 min-w-11 items-center justify-center rounded-full sm:h-12 sm:w-12",
-        "right-[max(0.75rem,env(safe-area-inset-right,0px))]",
-        
-        "bottom-[max(10.5rem,calc(10rem+env(safe-area-inset-bottom,0px)))]",
+        "right-[max(1rem,env(safe-area-inset-right,0px))]",
+        "bottom-[max(11.25rem,calc(10.75rem+env(safe-area-inset-bottom,0px)))]",
         "border border-black/10 bg-white/95 text-foreground shadow-lg backdrop-blur-sm",
         "touch-manipulation hover:!bg-black hover:!text-white hover:!border-black active:!bg-black active:!text-white active:!border-black",
         press.css
@@ -106,8 +105,7 @@ export function CallButton() {
       className={cn(
         "fab-attention fab-attention--call fixed z-50 flex items-center justify-center rounded-full",
         "right-[max(1rem,env(safe-area-inset-right,0px))]",
-        "bottom-[max(5.5rem,calc(5rem+env(safe-area-inset-bottom,0px)))]",
-        
+        "bottom-[max(5.75rem,calc(5.25rem+env(safe-area-inset-bottom,0px)))]",
         "h-14 w-14 bg-primary text-white shadow-lg",
         "md:h-auto md:w-auto md:gap-2 md:px-4 md:py-3 md:min-h-12",
         "touch-manipulation hover:!bg-black hover:!text-white active:!bg-black active:!text-white group",

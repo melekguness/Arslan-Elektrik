@@ -47,7 +47,7 @@ export function Stats() {
   const inView = useInView(ref, { once: true, margin: "-15% 0px" });
 
   return (
-    <section className="relative overflow-hidden bg-[#DC2626] py-12 text-white sm:py-14 md:py-16">
+    <section className="relative overflow-hidden bg-[#DC2626] py-14 text-white sm:py-16 md:py-16">
       {}
       <Image
         src="/images/stats-bg.jpg"
@@ -70,7 +70,7 @@ export function Stats() {
 
       <div
         ref={ref}
-        className="relative mx-auto grid max-w-[1200px] grid-cols-2 gap-x-2 gap-y-6 px-4 sm:gap-x-3 sm:gap-y-10 sm:px-5 lg:grid-cols-4 lg:gap-0"
+        className="relative mx-auto grid max-w-[1200px] grid-cols-2 gap-x-3 gap-y-8 px-4 sm:gap-x-4 sm:gap-y-10 sm:px-5 lg:grid-cols-4 lg:gap-0"
       >
         {stats.map((stat, i) => (
           <Reveal

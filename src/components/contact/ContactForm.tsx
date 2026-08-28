@@ -57,9 +57,9 @@ export function ContactForm() {
   };
 
   return (
-    <section id="iletisim" className="section-pad bg-surface">
+    <section id="iletisim" className="section-pad pb-safe-float bg-surface">
       <div className="container-premium">
-        <Reveal className="mx-auto mb-7 max-w-2xl text-center sm:mb-8 lg:mb-9">
+        <Reveal className="mx-auto mb-8 max-w-2xl text-center sm:mb-9 lg:mb-10">
           <p className="type-eyebrow mb-3 inline-flex items-center justify-center gap-2 text-primary">
             <span className="inline-block h-2 w-2 rounded-full bg-primary" aria-hidden />
             İletişim
@@ -70,7 +70,7 @@ export function ContactForm() {
           </p>
         </Reveal>
 
-        <Reveal className="mx-auto w-full max-w-[600px]">
+        <Reveal className="mx-auto w-full max-w-[600px] pr-fab-clear md:pr-0">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col rounded-xl border border-black/8 bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-7 lg:p-8"
