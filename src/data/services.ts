@@ -44,11 +44,16 @@ export const services: Service[] = [
     id: "elektrik-pano",
     title: "Elektrik Panosu Montajı",
     description:
-      "Dağıtım, kompanzasyon ve otomasyon panolarının tasarımı ve montajı.",
+      "Bina içi elektrik tesisatı, kombinasyon panosu, 380V güç panosu montajı.",
     longDescription:
-      "Güvenli, düzenli ve bakımı kolay pano sistemleri — konuttan fabrikaya ölçeklenebilir çözümler.",
+      "Bina içi elektrik tesisatı, kombinasyon panosu ve 380V güç panosu montajı — güvenli, düzenli ve bakımı kolay sistemler.",
     icon: CircuitBoard,
-    features: ["Dağıtım panosu", "Kompanzasyon", "Otomasyon", "Revizyon"],
+    features: [
+      "Bina içi tesisat",
+      "Kombinasyon panosu",
+      "380V güç panosu",
+      "Revizyon",
+    ],
     category: "pano",
   },
   {
