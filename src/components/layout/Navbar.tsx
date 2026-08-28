@@ -194,8 +194,8 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
-                "cta-shine mt-3 flex h-12 min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] text-sm font-bold uppercase text-white shadow-sm touch-manipulation",
-                "hover:!bg-[#1ebe57] active:!bg-[#1ebe57]",
+                "cta-shine mt-3 flex h-12 min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#178C46] text-sm font-bold uppercase text-white shadow-sm touch-manipulation",
+                "hover:!bg-[#136F3A] active:!bg-[#136F3A]",
                 pressCss
               )}
             >

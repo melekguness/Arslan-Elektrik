@@ -84,8 +84,8 @@ export function FloatingWhatsApp() {
         "fixed z-50 flex h-14 w-14 items-center justify-center rounded-full",
         "right-[max(1rem,env(safe-area-inset-right,0px))]",
         "bottom-[max(1.25rem,calc(1rem+env(safe-area-inset-bottom,0px)))]",
-        "bg-[#25D366] text-white shadow-[0_8px_28px_rgba(37,211,102,0.35)]",
-        "touch-manipulation hover:!bg-[#1ebe57] active:!bg-[#1ebe57]",
+        "bg-[#178C46] text-white shadow-[0_8px_28px_rgba(23,140,70,0.35)]",
+        "touch-manipulation hover:!bg-[#136F3A] active:!bg-[#136F3A]",
         press.css
       )}
       aria-label="WhatsApp ile yazın"

@@ -29,7 +29,7 @@ const buttonVariants = cva(
         ghost:
           "bg-transparent text-foreground shadow-none hover:!bg-black hover:!text-white active:!bg-black active:!text-white",
         whatsapp:
-          "bg-[#25D366] text-white hover:!bg-[#1ebe57] active:!bg-[#1ebe57]",
+          "bg-[#178C46] text-white hover:!bg-[#136F3A] active:!bg-[#136F3A]",
         slant:
           "bg-primary text-white hover:!bg-black hover:!text-white active:!bg-black active:!text-white btn-slant",
       },
