@@ -10,7 +10,24 @@ import { MotionAnchor } from "@/components/ui/interactive";
 import { pressCssHero } from "@/lib/motion-press";
 import { cn } from "@/lib/utils";
 
-const slides = [
+type HeroSlide = {
+  eyebrow: string;
+  title: string;
+  support: string;
+  image: string;
+  imageDesktop?: string;
+  alt: string;
+  objectPos: string;
+  objectPosDesktop?: string;
+  kenBurns: boolean;
+  unoptimized?: boolean;
+  fillMobile?: boolean;
+  fillMobileBg?: string;
+  layered?: boolean;
+  skyMobile?: boolean;
+};
+
+const slides: HeroSlide[] = [
   {
     eyebrow: "Atakum’un Güvenilir Markası",
     title: "Kalite bizden, tercih sizden.",
@@ -18,7 +35,7 @@ const slides = [
     image: IMAGES.hero.panelHero,
     alt: "Profesyonel elektrik panosu ve sigortalar",
     objectPos: "object-[72%_center] md:object-[68%_center]",
-    kenBurns: false as const,
+    kenBurns: false,
   },
   {
     eyebrow: "Uydu · Çanak Anten",
@@ -29,9 +46,9 @@ const slides = [
     alt: "Çanak anten ve sinyal ölçer",
     objectPos: "object-[100%_68%] max-md:scale-[1.08] max-md:origin-right",
     objectPosDesktop: "object-[70%_48%] lg:object-[65%_45%]",
-    kenBurns: false as const,
+    kenBurns: false,
     unoptimized: true,
-    fillMobile: true as const,
+    fillMobile: true,
     fillMobileBg: "#7A90A8",
   },
   {
@@ -43,9 +60,9 @@ const slides = [
     alt: "Premium PTZ güvenlik kamerası",
     objectPos: "object-[100%_40%] max-md:scale-[1.06] max-md:origin-right",
     objectPosDesktop: "object-[82%_38%] lg:object-[78%_36%]",
-    kenBurns: false as const,
+    kenBurns: false,
     unoptimized: true,
-    fillMobile: true as const,
+    fillMobile: true,
     fillMobileBg: "#C4A882",
   },
 ];
