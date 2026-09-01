@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Send, CheckCircle2, Loader2, Phone } from "lucide-react";
+import { Send, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -164,40 +164,6 @@ export function ContactForm() {
                   </>
                 )}
               </Button>
-
-              <div
-                className="flex items-center gap-3 pt-0.5"
-                role="separator"
-                aria-label="veya"
-              >
-                <span className="h-px flex-1 bg-black/10" aria-hidden />
-                <span className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#999]">
-                  veya
-                </span>
-                <span className="h-px flex-1 bg-black/10" aria-hidden />
-              </div>
-
-              <Button asChild variant="secondary" size="lg" className={cn(contactCtaClass, "mt-0")}>
-                <a href={SITE.phoneHref} aria-label={`Hemen ara: ${SITE.phoneDisplay}`}>
-                  <Phone className="size-4" aria-hidden />
-                  Hemen Ara
-                </a>
-              </Button>
-
-              <div className="flex flex-col items-center gap-1.5 pt-1 text-center text-[13px] font-semibold text-[#333]">
-                <a
-                  href={SITE.phoneHref}
-                  className="touch-manipulation hover:text-primary active:text-primary"
-                >
-                  {SITE.phoneDisplay}
-                </a>
-                <a
-                  href={SITE.phone2Href}
-                  className="touch-manipulation hover:text-primary active:text-primary"
-                >
-                  {SITE.phone2Display}
-                </a>
-              </div>
             </div>
           </form>
         </Reveal>
