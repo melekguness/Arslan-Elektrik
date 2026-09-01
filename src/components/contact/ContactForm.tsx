@@ -183,6 +183,21 @@ export function ContactForm() {
                   Hemen Ara
                 </a>
               </Button>
+
+              <div className="flex flex-col items-center gap-1.5 pt-1 text-center text-[13px] font-semibold text-[#333]">
+                <a
+                  href={SITE.phoneHref}
+                  className="touch-manipulation hover:text-primary active:text-primary"
+                >
+                  {SITE.phoneDisplay}
+                </a>
+                <a
+                  href={SITE.phone2Href}
+                  className="touch-manipulation hover:text-primary active:text-primary"
+                >
+                  {SITE.phone2Display}
+                </a>
+              </div>
             </div>
           </form>
         </Reveal>

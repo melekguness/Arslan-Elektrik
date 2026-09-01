@@ -11,6 +11,9 @@ export const siteConfig = {
   /** User-facing TR spacing: `0xxx xxx xx xx`. Keep href/whatsapp digits-only. */
   phoneDisplay: "0542 676 46 00",
   phoneHref: "tel:+905426764600",
+  phone2: "+905333446555",
+  phone2Display: "0533 344 65 55",
+  phone2Href: "tel:+905333446555",
   whatsapp: "905426764600",
   whatsappHref:
     "https://wa.me/905426764600?text=Merhaba%2C%20elektrik%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",

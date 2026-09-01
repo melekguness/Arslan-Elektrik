@@ -49,7 +49,7 @@ export function localBusinessSchema() {
     name: SITE.name,
     description: SITE.description,
     url: SITE.url,
-    telephone: SITE.phone,
+    telephone: [SITE.phone, SITE.phone2],
     email: SITE.email,
     image: `${SITE.url}/og.jpg`,
     address: {

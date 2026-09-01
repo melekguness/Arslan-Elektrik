@@ -51,6 +51,16 @@ export function Footer() {
                   {SITE.phoneDisplay}
                 </a>
               </li>
+              <li>
+                <a
+                  href={SITE.phone2Href}
+                  aria-label={`Hemen ara: ${SITE.phone2Display}`}
+                  className="inline-flex items-center gap-2 touch-manipulation transition-colors hover:text-primary active:text-primary"
+                >
+                  <Phone className="size-4 text-primary" strokeWidth={1.75} />
+                  {SITE.phone2Display}
+                </a>
+              </li>
               <li className="inline-flex items-start gap-2">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-primary" strokeWidth={1.75} />
                 {SITE.address.full}
