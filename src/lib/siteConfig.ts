@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Samsun'un Güvenilir Elektrik Markası",
   description:
     "Samsun'da profesyonel elektrikçi ve tadilat hizmetleri. Elektrik tesisatı, arıza tespiti, pano montajı, LED aydınlatma, kamera, uydu ve çanak sistemleri.",
-  url: "https://arslanelektrik.com",
+  url: "https://samsunarslanelektrik.com",
   locale: "tr_TR",
   phone: "+905426764600",
   /** User-facing TR spacing: `0xxx xxx xx xx`. Keep href/whatsapp digits-only. */
