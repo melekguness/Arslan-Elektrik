@@ -39,14 +39,24 @@ export function ElectrixBanner() {
           </MotionLink>
         </motion.div>
 
-        <MotionAnchor
-          href={SITE.phoneHref}
-          aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
-          className="mt-6 inline-flex items-center justify-center gap-2 text-[15px] font-medium text-white transition-colors hover:text-white/90 active:text-white/90 sm:mt-7 sm:text-[16px] touch-manipulation"
-        >
-          <Phone className="size-[18px] shrink-0" strokeWidth={1.85} />
-          {SITE.phoneDisplay}
-        </MotionAnchor>
+        <div className="mt-6 flex flex-col items-center gap-2.5 sm:mt-7 sm:gap-3">
+          <MotionAnchor
+            href={SITE.phoneHref}
+            aria-label={`Hemen ara: ${SITE.phoneDisplay}`}
+            className="inline-flex items-center justify-center gap-2 text-[15px] font-medium text-white transition-colors hover:text-white/90 active:text-white/90 sm:text-[16px] touch-manipulation"
+          >
+            <Phone className="size-[18px] shrink-0" strokeWidth={1.85} />
+            {SITE.phoneDisplay}
+          </MotionAnchor>
+          <MotionAnchor
+            href={SITE.phone2Href}
+            aria-label={`Hemen ara: ${SITE.phone2Display}`}
+            className="inline-flex items-center justify-center gap-2 text-[15px] font-medium text-white transition-colors hover:text-white/90 active:text-white/90 sm:text-[16px] touch-manipulation"
+          >
+            <Phone className="size-[18px] shrink-0" strokeWidth={1.85} />
+            {SITE.phone2Display}
+          </MotionAnchor>
+        </div>
       </div>
 
       <motion.div
