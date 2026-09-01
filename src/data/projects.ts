@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: "İlkadım Restoran Aydınlatma",
     location: "İlkadım, Samsun",
     category: "Ticari",
-    services: ["LED Aydınlatma", "Elektrik Panosu Montajı", "Kamera Sistemleri"],
+    services: ["LED Aydınlatma", "Elektrik Pano Montajı", "Kamera Sistemleri"],
     description:
       "Premium restoran için atmosferik LED senaryoları, mutfak panosu revizyonu ve güvenlik kamerası entegrasyonu.",
     image: IMAGES.projects.ledLighting,
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "Tekkeköy Fabrika Panosu",
     location: "Tekkeköy, Samsun",
     category: "Endüstriyel",
-    services: ["Elektrik Panosu Montajı", "Jeneratör", "Bakım"],
+    services: ["Elektrik Pano Montajı", "Jeneratör", "Bakım"],
     description:
       "Üretim hattı için kompanzasyonlu dağıtım panosu, ATS'li jeneratör bağlantısı ve yıllık bakım sözleşmesi.",
     image: IMAGES.projects.factoryFloor,
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     title: "Bafra Market Zinciri",
     location: "Bafra, Samsun",
     category: "Ticari",
-    services: ["LED Aydınlatma", "Elektrik Panosu Montajı", "Arıza Servisi"],
+    services: ["LED Aydınlatma", "Elektrik Pano Montajı", "Arıza Servisi"],
     description:
       "Üç şubeli market zincirinde soğuk zincir panosu, raf LED aydınlatması ve acil müdahale protokolü.",
     image: IMAGES.projects.retailLight,

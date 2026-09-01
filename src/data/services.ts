@@ -42,7 +42,7 @@ export const services: Service[] = [
   },
   {
     id: "elektrik-pano",
-    title: "Elektrik Panosu Montajı",
+    title: "Elektrik Pano Montajı",
     description:
       "Bina içi elektrik tesisatı, kombinasyon panosu, 380V güç panosu montajı.",
     longDescription:
